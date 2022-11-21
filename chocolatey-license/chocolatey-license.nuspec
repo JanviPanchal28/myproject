@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>chocolatey-license</id>
+    <version>1.0.0</version>
+    <title>Chocolatey License</title>
+    <authors>Chocolatey Software, Inc</authors>
+    <tags>chocolatey license</tags>
+    <summary>Installs the Chocolatey commercial license file.</summary>
+    <description>This package ensures installation of the Chocolatey commercial license file.
+This should be installed internally prior to installing other packages, directly after Chocolatey is installed and prior to installing `chocolatey.extension` and `chocolatey-agent`.
+The order for scripting is this:
+* chocolatey
+* chocolatey-license
+* chocolatey.extension
+* chocolatey-agent
+If items are installed in any other order, it could have strange effects or fail.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
